@@ -1,0 +1,49 @@
+# 全局规则
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /dist/
+Disallow: /*.json$
+Disallow: /?*
+
+# 百度爬虫
+User-agent: Baiduspider
+Allow: /
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /dist/
+Crawl-delay: 1
+
+# Google 爬虫
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+# Bing 爬虫
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# 其他主流搜索引擎
+User-agent: Sogou Spider
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: YisouSpider
+Allow: /
+
+# Sitemap 声明
+Sitemap: https://www.nationrel.com/sitemap.xml
