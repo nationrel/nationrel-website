@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>证书图片预览</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+    h1 { text-align: center; color: #333; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
+    .card { background: white; border-radius: 8px; padding: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .card img { width: 100%; height: auto; border-radius: 4px; }
+    .card .num { text-align: center; font-weight: bold; color: #666; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <h1>证书图片预览（共66张）</h1>
+  <div class="grid">
+    <script>
+      for(let i = 1; i <= 66; i++) {
+        document.write(`<div class="card"><img src="/certificates/docx/image${String(i).padStart(2,'0')}.png" alt="证书${i}"><div class="num">证书 ${i}</div></div>`);
+      }
+    </script>
+  </div>
+</body>
+</html>
